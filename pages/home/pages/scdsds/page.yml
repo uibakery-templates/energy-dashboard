@@ -1,0 +1,26 @@
+id: '17188885926900.47728516298032386'
+name: scdsds
+url: scdsds
+roleIds: []
+disableInMenu: false
+hideFromMenu: false
+parentPageId: '1'
+slots:
+  - id: '17188885926900.4055037140900797'
+    name: content
+    children:
+      - id: '17188885926900.11928890525489289'
+        definitionId: grid
+        parentSlotId: '17188885926900.4055037140900797'
+        styles: {}
+        properties:
+          name: scdsds
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots:
+          - id: '17188885926910.07605140925343257'
+            name: content
+            children: []

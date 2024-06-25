@@ -1,0 +1,105 @@
+id: '17188933453990.7447464143176545'
+definitionId: chart
+parentSlotId: '17188932350080.07827781567334613'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 19
+      w: 24
+      h: 56
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+    legend:
+      visible: false
+      orientation: horizontal
+      horizontal: center
+      vertical: top
+  xs:
+    gridItem:
+      x: 0
+      y: 63
+      w: 24
+      h: 79
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  dataset: '{{actions.machines.data}}'
+  config: |-
+    option = {
+      tooltip: {
+        trigger: 'axis'
+      },
+      grid: {
+        left: '16',
+        right: '20',
+        bottom: '10',
+        containLabel: true
+      },
+      xAxis: {
+        type: 'category',
+        boundaryGap: false,
+      },
+      yAxis: {
+        type: 'value'
+      },
+      series: [
+        {
+          type: 'line',
+          stack: 'Total',
+          areaStyle: {},
+          data: [120, 132, 101, 134, 90, 230, 210],
+          smooth: false,
+        },
+      ]
+    };
+  lineSmooth: true
+  name: machinesChart2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: ''
+  type: lineChart
+  structure:
+    - title: Machine
+      data: []
+      color: primary
+      xProp: lastMaintenanceDate
+      yProp: tasksInQueue
+      ignoreTimezone: false
+      __UIBAKERY__SYSTEM_ID__: '17188933794300.3661066842771359'
+      groupType: day
+      groupFunctionType: count
+  showLoading:
+    withData: true
+    dataValue: '{{actions.machines.loading}}'
+    value: false
+  useJsConfig: echarts
+  barsWidth: 30
+  barsRounderdCorners: true
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: default
+      shadow: default
+      border: none
+actions: {}
+slots: []

@@ -1,0 +1,50 @@
+id: '17188934627290.8519240232297765'
+definitionId: cardNew
+parentSlotId: '2'
+styles:
+  xl:
+    gridItem:
+      x: 8
+      y: 13
+      w: 16
+      h: 79
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 997
+      w: 24
+      h: 79
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: card3
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  showHeader: false
+actions: {}
+slots:
+  - id: '17188934627290.1488138424099763'
+    name: header
+    children: []
+  - id: '17188934627290.30531414698356074'
+    name: footer
+    children: []
+  - id: '17188934627290.6761756861384718'
+    name: views
+    children:
+      - view_3/view_3.yml
